@@ -1,19 +1,21 @@
 # Monica
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/monica`. To experiment with that code, run `bin/console` for an interactive prompt.
+Have you ever need to organize your rails api results and didn't find any gem with all that is necessary to crack your API to very good standards.
+For reference, the standards aborded would be based on [this](https://www.moesif.com/blog/technical/api-design/REST-API-Design-Filtering-Sorting-and-Pagination/), but with a few teaks.
 
-TODO: Delete this and the text above, and describe your gem
+REMINDER: **THIS GEM IS NOT READY FOR PRODUCTION, FOR THE MOMENT IT IS JUST A WORK IN PROGRESS!!**
 
+
+## Modules
+
+This gem will be composed of the following module: `act_as_filterable`, `act_as_sortable`, `act_as_paginatable` and `act_as_searchable`, tha could be use separately or in conjunction, and generate methods tha can be easily overwritten, added or extended, if you.
 ## Installation
 
-Install the gem and add to the application's Gemfile by executing:
+Add the gem to your gemfile:
 
-    $ bundle add monica
+    $ gem 'monica', '~> 0.1.0'
 
-If bundler is not being used to manage dependencies, install the gem by executing:
-
-    $ gem install monica
-
+And now you're good to go!
 ## Usage
 
 TODO: Write usage instructions here
