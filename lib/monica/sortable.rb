@@ -1,6 +1,6 @@
 module Monica
   module Sortable
     
-    self.attributes
+    # self.attributes
   end
 end

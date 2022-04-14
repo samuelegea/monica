@@ -1,6 +1,10 @@
 module Monica
   module Filterable
     
-    self.attributes
+    self.class.columns.each do |column|
+      scope "filter_by_#{column.name}".to_sym, (filter) -> {
+        where(column.name.to_sym => filter)
+      }
+    end
   end
 end

@@ -1,6 +1,6 @@
 module Monica
   module Searchable
     
-    self.attributes
+    # self.attributes
   end
 end

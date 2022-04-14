@@ -1,6 +1,6 @@
 module Monica
   module Paginatable
     
-    self.attributes
+    # self.attributes
   end
 end
