@@ -5,16 +5,16 @@ require_relative "lib/monica/version"
 Gem::Specification.new do |spec|
   spec.name = "monica"
   spec.version = Monica::VERSION
-  spec.authors = ["TODO: Write your name"]
-  spec.email = ["TODO: Write your email address"]
+  spec.authors = "Samuel Egea"
+  spec.email = "samuelegea@hotmail.com"
 
-  spec.summary = "TODO: Write a short summary, because RubyGems requires one."
-  spec.description = "TODO: Write a longer description or delete this line."
-  spec.homepage = "TODO: Put your gem's website or public repo URL here."
+  spec.summary = "Monica Gellering your Rails API results!"
+  spec.description = "A gem to paginate, filter, sort and search inside your results, improving performace and general API usability wiht out-of-the-box content"
+  spec.homepage = "https://github.com/samuelegea/monica"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 2.6.0"
 
-  spec.metadata["allowed_push_host"] = "TODO: Set to your gem server 'https://example.com'"
+  # spec.metadata["allowed_push_host"] = "TODO: Set to your gem server 'https://example.com'"
 
   spec.metadata["homepage_uri"] = 'https://github.com/samuelegea/monica'
 
