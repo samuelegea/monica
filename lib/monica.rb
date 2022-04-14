@@ -7,13 +7,6 @@ require_relative "monica/searchable"
 require_relative "monica/paginatable"
 
 module Monica
-  class Error < StandardError; end
-  # Your code goes here...
-
-  def method_name
-    
-    end
-    
 end
 
 ActiveSupport.on_load(:active_record) do
