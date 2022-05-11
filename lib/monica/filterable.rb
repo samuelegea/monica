@@ -14,7 +14,7 @@ module Monica
             if filter.is_a? Hash
               results = self
               filter.each do |key, value|
-                results = results.query column, key.to_s, value
+                results = results.send :query, column, key.to_s, value
               end
               results
             else
