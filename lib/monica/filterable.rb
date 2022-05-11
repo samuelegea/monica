@@ -6,8 +6,6 @@ module Monica
     def self.included(base)
       base.extend ClassMethods
       base.extend Monica::Helpers
-      base.controller_name.constantize.send(:include, ControllerMethods)
-
       base.singleton_class.class_eval do
         base.auto_filter_columns.each do |column|
           next if respond_to? "filter_by_#{column}".to_sym
@@ -16,7 +14,7 @@ module Monica
             if filter.is_a? Hash
               results = self
               filter.each do |key, value|
-                results = results.send :query, column, key.to_s, value
+                results = results.query column, key.to_s, value
               end
               results
             else
@@ -103,6 +101,10 @@ module Monica
           p.permit(*filter)
         end.map(&:to_hash)
       end
+    end
+
+    def query_mapper(match)
+      MATCHERS[match] || '='
     end
 
     private

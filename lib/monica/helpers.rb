@@ -9,9 +9,5 @@ module Monica
       # Override this if you use something like API::V1::PostsController
       ''
     end
-
-    def query_mapper(match)
-      MATCHERS[match] || '='
-    end
   end
 end
