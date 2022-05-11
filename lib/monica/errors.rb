@@ -1,0 +1,2 @@
+class MonicaErrors < StandardError
+end
